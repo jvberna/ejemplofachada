@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SinFacadeComponent } from './components/sin-facade/sin-facade.component';
 import { ConFacadeComponent } from './components/con-facade/con-facade.component';
+import { OtroConFacadeComponent } from './components/otro-con-facade/otro-con-facade.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SinFacadeComponent,
-    ConFacadeComponent
+    ConFacadeComponent,
+    OtroConFacadeComponent
   ],
   imports: [
     BrowserModule,

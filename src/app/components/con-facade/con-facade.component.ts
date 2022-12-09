@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild, OnDestroy} from '@angular/core';
+import { FacadeMotorTagService } from 'src/app/services/facade-motor-tag.service';
 import { FacadeMotorService } from 'src/app/services/facade-motor.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class ConFacadeComponent implements OnInit, OnDestroy {
   // creamos una referencia al Canvas Lienzo que será utilizado después
   @ViewChild('lienzo', {static: true}) lienzoRef!: ElementRef<HTMLCanvasElement>;
 
-  constructor(private facadeMotor: FacadeMotorService) { }
+  constructor(private facadeMotor: FacadeMotorTagService) { }
 
   ngOnInit(): void {
     this.facadeMotor.crearEscena(this.lienzoRef);

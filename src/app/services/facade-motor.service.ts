@@ -74,7 +74,7 @@ export class FacadeMotorService {
     });
   }
 
-  public render(): void {
+  private render(): void {
     this.frameId = requestAnimationFrame(() => {
       this.render();
     });
